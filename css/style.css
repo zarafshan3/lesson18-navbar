@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://wallpapergod.com/images/hd/black-1920X1200-wallpaper-2hbivma8z28qfqxh.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navBar{
+    width: 100%;
+    min-height: 70px;
+    float: left;
+    background: rgba(0, 0, 0, 0.801);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo, .menu, .icons, .burgerMenu{
+    min-width: 100px;
+    min-height: 70px;
+    background: transparent;
+   
+    float: left;
+
+}
+
+.logo, .menu, .icons{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    float: left;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icons i{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+.smallNav{
+    width: 100%;
+    min-height: 70px;
+    background: rgba(0, 0, 0, 0.801);
+    float: left;
+    display: none;
+    position: relative;
+}
+
+.right{
+    float: right;
+
+}
+
+.smallNavMenu{
+    width: 100%;
+    min-height: 100vh;
+    float: left;
+    position: fixed;
+    top: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    left: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.smallNavMenu ul{
+    padding: 0px;
+}
+
+.smallNavMenu li{
+    width: 100%;
+    min-height: 50px;
+    float: left;
+    margin: 2px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.BMenuStyle{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.smallNavMenuDeactivate{
+    display: block;
+    top: 70px;
+    left: 0px;
+}
+
+.iconX{
+    display: block;
+}
+
+.iconBar{
+    display: none;
+}
+
+.times{
+    float: left;
+    display: none;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navBar{
+        display: none;
+    }
+
+    .smallNav{
+        display: block;
+    }
+
+    .fa-times{
+        float: left;
+        display: none;
+    }
+    .iconX{
+       display: block;
+    }
+    .iconBar{
+        display: none;
+    }
+
+    
+}
